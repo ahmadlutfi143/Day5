@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Personal Web - My Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="project.js"></script>
+</head>
+<body>
+  
+    <!--MENU BAR-->
+    <nav>
+        <div class="left-side">
+          <a href="index.html"><img src="dw.png" alt="" /></a>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project.html" class="active">My Project</a></li>
+          </ul>
+        </div>
+  
+        <div class="right-side">
+          <a href="contact-me.html">Contact Me</a>
+        </div>
+    </nav>
+
+    <!--ADD MY PROJECT-->
+    <div class="personality">
+       <form>
+        <h1>ADD MY PROJECT</h1>
+        <div>
+          <label for="project">Project Name</label>
+          <input type="text" name="" id="project"/>
+        </div>
+        <div class="form-group left">
+          <label for="start" class="label-title">Start Date</label>
+           <input type="date" name="" id="start"/>
+        </div>
+        <div class="form-group right">
+          <label for="end">End Date</label>
+          <input type="date" name="" id="end"/>
+         </div>
+         <div>
+            <label for="description">Description</label>
+            <textarea name="" id="description" cols="30" rows="10"></textarea>
+          </div>
+          <div>
+              <div>
+            <label for="technologies">Technologies</label>
+              </div>
+              <div class="form-group left">
+                <div class="techn">
+              <label class="container">Html
+                <input type="checkbox" value="fa-brands fa-html5" id="Html">
+                <span class="checkmark"></span>
+              </label>
+                </div>
+
+                <div class="techn">
+              <label class="container">Css
+                <input type="checkbox" value="fa-brands fa-css3-alt" id="Css">
+                <span class="checkmark"></span>
+              </label>
+                </div>
+              </div>
+
+
+              <div class="form-group right">
+                <div class="techn">
+              <label class="container">React Js
+                <input type="checkbox" value="fa-brands fa-react" id="React">
+                <span class="checkmark"></span>
+              </label>
+                </div>
+
+                <div class="techn">
+              <label class="container">Javascript
+                <input type="checkbox" value="fa-brands fa-js-square" id="Java">
+                <span class="checkmark"></span>
+              </label>
+                </div>
+              </div>
+          </div>
+          <div>
+            <label for="upload">Upload Image</label>
+             <input type="file" name="" id="upload"/>
+          </div>
+        <div class="btn-submit">
+          <button  onclick="addProject()" type="button">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <!--MY PROJECT-->
+    <div class="latar">
+      <div><h1>MY PROJECT</h1>
+      <main class="grid" id="stock">
+        
+        <!--<article>
+          <img src="tech.jpg" style="width: 100%; border-radius: 10px" />
+          <div class="posting" id="posting-card">
+            <h3><a href="project-detail.html" target="_blank">Javascript Mobile</a></h3>
+            <span class="post-date">
+              <time class="post-date">durasi : 3 bulan</time>
+            </span>
+            <p>App that used for Dumbways student, it was deployed and can downloaded on playstore. Happy download</p>
+            <div class="logo">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-react"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-js-square"></i>
+            </div>
+            <div class="btn-submit">
+              <button type="button">edit</button>
+              <button type="button">delete</button>
+            </div>
+            <div class="time-ago">1 minute ago</div>
+          </div>    
+        </article>-->
+
+      </main>
+      </div>
+    </div>
+
+</body>
+</html>
